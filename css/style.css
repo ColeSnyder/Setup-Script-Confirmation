@@ -1,0 +1,266 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body { /* entire body gets this */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: white;
+    margin: 0%;
+}
+
+header { /* main header at top of each page */
+    background-color: #232323;
+    height: 16%;
+    padding-left: 3%;
+}
+
+#headerH2 { /* device specific div header */ 
+    color: white;
+}
+
+h2 { /* main header text */
+    font-weight: 100;
+    font-size: 2.5em;
+    margin-top: 4%;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: white;
+    display: inline-block;
+}
+
+h4 { /* this text is used for regular body text content */
+    font-weight: 100;
+    font-size: 1.4em;
+    color: #232323;
+}
+
+h5 { /* footer headers */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.container { /* entire body content */ 
+    max-width: 100%;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.indexParalax { /* first area of page, index content goes here */
+    height: 75%;
+    background: url("../Photos/abstract.png") no-repeat center center fixed;
+    background-size: cover;
+    z-index: 2;
+    padding-top: 5%;
+}
+
+.toolsParalaxPC { /* second area of page. device specific content goes here. Split into two areas. css grid layout. PC specific */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: url("../Photos/hp.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 79%;
+    z-index: 2;
+    justify-content: center;
+}
+
+.toolsParalaxMAC { /* second area of page. device specific content goes here. Split into two areas. css grid layout. PC specific */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: url("../Photos/comp.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 79%;
+    z-index: 2;
+    justify-content: center;
+}
+
+.logo { /* class that applys to check mark and content area */
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+svg { /* this is the tag for the checkmark */
+    width: 15%;
+}
+
+#error { /* this id is the icon img that grows on the error.html page */
+    width: 15%;
+    animation: growError 1s;
+}
+
+#arrow {
+    margin-top: 7%;
+    color: #232323;
+    font-size: 3em;
+}
+
+#arrow:hover {
+    cursor: pointer;
+}
+
+#indexContent {
+    width: 65%;
+}
+
+#flame {
+    width: 6%;
+    vertical-align: top;
+}
+
+.paralaxHeader {
+    padding-left: 5%;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    background: transparent;
+    border-radius: 2px;
+}
+
+main {
+    padding-top: 3%;
+    display: inline;
+}
+
+footer {
+    width: 100%;
+    height: 175px;
+    background-color: #232323;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: -1.4%;
+    text-align: center;
+    position: static;
+}
+
+.footerSection {
+    margin: auto;
+    width: 75%;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+ul {
+    margin-top: 0%;
+    list-style-type: none;
+    width: 75%;
+    margin: auto;
+    margin-left: 5%;
+    padding-right: 40px;
+    background-color: #EDEDED;
+    opacity: .9;
+    border-radius: 2px;
+    border-left: 4px solid #232323;
+}
+
+li {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #4B08A1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+li:hover {
+    color: #4f4f4f;
+    text-decoration: underline;
+    background-color: #e2e2e2;
+}
+
+.socialMedia {
+    color: white;
+}
+
+.socialMedia:hover {
+    color: #e2e2e2;
+}
+
+.path { 
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 500ms ease-in-out forwards;
+    -webkit-animation: dash 1000ms ease-in-out forwards; 
+}
+
+#Layer_1 {
+      margin-left: -15px;
+}
+  
+.check {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 1000ms ease-in-out forwards;
+    -webkit-animation: dash 1000ms ease-in-out forwards;
+    animation-delay: 500ms; 
+    -webkit-animation-delay: 200ms;  
+}  
+  
+@-webkit-keyframes dash {
+    0% {  
+      stroke-dashoffset: -1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+}
+  
+@keyframes dash {
+    0% {
+      stroke-dashoffset: -1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+}
+
+.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0); }
+    40% {
+      -webkit-transform: translateY(-30px); }
+    60% {
+      -webkit-transform: translateY(-15px); } }
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0); }
+    40% {
+      -moz-transform: translateY(-30px); }
+    60% {
+      -moz-transform: translateY(-15px); } }
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0); }
+    40% {
+      -webkit-transform: translateY(-30px);
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -o-transform: translateY(-30px);
+      transform: translateY(-30px); }
+    60% {
+      -webkit-transform: translateY(-15px);
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -o-transform: translateY(-15px);
+      transform: translateY(-15px); } }
+
+@keyframes growError {
+    from {
+        transform: scale(.3);
+    }
+     to {
+        transform: scale(1);
+    }
+}
