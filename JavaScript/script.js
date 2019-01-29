@@ -1,20 +1,24 @@
-// var OS = navigator.platform;
-// var localFile;
+var OS = navigator.platform;
+var localFile;
 
-// if (OS == "Win32") {
-//     errorFilePath = "file:\\appsrv1.winona.edu\_personalization$\error.txt";
-// } else if (OS == "MacIntel") {
-//     localFile = "Users/os4584kh/Desktop/error.txt";
-// }
-
-
+if (OS == "Win32") {
+    localFile = "file:\\C:\Users\Public\Documents\error.txt";
+} else if (OS == "MacIntel") {
+    localFile = "Users/os4584kh/Desktop/error.txt";
+}
 
 // document.onload(readTextFile(localFile))
+
+
+
+
+
 
 // function readTextFile(file)
 // {
 
 //     alert("into Function");
+
 
 //     var rawFile = new XMLHttpRequest();
 //     rawFile.open("GET", file, false);
